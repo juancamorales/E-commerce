@@ -19,9 +19,9 @@ module.exports = postPayment = async (req, res) => {
              },
            ],
         back_urls: {
-            success: 'localhost:3000/payApro',
-            failure: 'localhost:3000/payFail',
-            pending: 'localhost:3000/payPend',
+            success: 'https://e-comerse-back-production.up.railway.app/payApro',
+            failure: 'https://e-comerse-back-production.up.railway.app/payFail',
+            pending: 'https://e-comerse-back-production.up.railway.app/payPend',
         },
         auto_return: 'approved',
         binary_mode: true,
