@@ -19,9 +19,9 @@ module.exports = postPayment = async (req, res) => {
              },
            ],
         back_urls: {
-            success: 'https://e-comerse-back-production.up.railway.app/payApro',
-            failure: 'https://e-comerse-back-production.up.railway.app/payFail',
-            pending: 'https://e-comerse-back-production.up.railway.app/payPend',
+            success: 'https://e-commerce-one-gules.vercel.app/payApro',
+            failure: 'https://e-commerce-one-gules.vercel.app/payFail',
+            pending: 'https://e-commerce-one-gules.vercel.app/payPend',
         },
         auto_return: 'approved',
         binary_mode: true,
