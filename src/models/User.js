@@ -23,22 +23,23 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         minLength: 9,
       },
-      favorites: {
-        type: DataTypes.STRING,
-      },
       mail: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
       },
+      image: {
+        type: DataTypes.STRING,
+      },
       roll: {
         type: DataTypes.STRING,
-        allowNull: false,
+        enum: ["client", "admin"],
+        defaultValue: "client",
       },
       active: {
         type: DataTypes.STRING,
         enum: ["valid", "invalid"],
-        default: "valid",
+        defaultValue: "valid",
       },
     },
     { timestamps: false }

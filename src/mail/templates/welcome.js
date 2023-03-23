@@ -480,7 +480,7 @@ const welcomeTemplate = (data) => {
                     <tr>
                       <td class="content-cell">
                         <div class="f-fallback">
-                          <h1>Welcome, ${data.roll}!</h1>
+                          <h1>Welcome, ${data.name}!</h1>
                           <p>
                             Thanks for trying Deli-Gou. We’re thrilled to have you
                             on board.

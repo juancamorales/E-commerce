@@ -1,64 +1,70 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
-  sequelize.define('food', {
-    id:{
-      type: DataTypes.STRING,
-      primaryKey: true,
-      allowNull: false
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    image: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    available: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-    },
-    price: {
-      type: DataTypes.INTEGER,
-  
-    },
-    discount: {
-      type: DataTypes.INTEGER,
-  
-    },
-    reviews: {
-      type: DataTypes.ARRAY(DataTypes.TEXT),
+  sequelize.define(
+    "food",
+    {
+      id : {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
       },
-    type: {
-      type: DataTypes.STRING,
-  
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      available: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+      },
+      price: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+      },
+      discount: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0,
+      },
+      reviews: {
+        type: DataTypes.ARRAY(DataTypes.TEXT),
+      },
+      type: {
+        type: DataTypes.STRING,
+        defaultValue: "New dish",
+      },
+      fat: {
+        type: DataTypes.STRING,
+        defaultValue: "Not specified",
+      },
+      sodium: {
+        type: DataTypes.STRING,
+        defaultValue: "Not specified",
+      },
+      sugar: {
+        type: DataTypes.STRING,
+        defaultValue: "Not specified",
+      },
+      description: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+      },
+      qualification: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0,
+      },
+      amount: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      active: {
+        type: DataTypes.STRING,
+        enum: ["valid", "invalid"],
+        defaultValue: "valid",
+      },
     },
-    fat: {
-      type: DataTypes.STRING,
-  
-    },
-    sodium: {
-      type: DataTypes.STRING,
-  
-    },
-    sugar: {
-      type: DataTypes.STRING,
-  
-    },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    qualification: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    amount: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    favorite: {
-      type: DataTypes.BOOLEAN,
-    }
-   },{ timestamps: false });
+    { timestamps: false }
+  );
 };

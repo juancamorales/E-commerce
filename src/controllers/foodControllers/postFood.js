@@ -2,7 +2,7 @@ const { Food } = require("../../db");
 
 module.exports = postFood = async (req, res) => {
   try {
-    const {
+    let {
       name,
       id,
       image,
@@ -19,8 +19,9 @@ module.exports = postFood = async (req, res) => {
       amount,
       favorite,
     } = req.body;
+    name = name.toUpperCase();
     if (name) {
-      const use = await Food.create({
+      await Food.create({
         name,
         id,
         image,
@@ -35,11 +36,11 @@ module.exports = postFood = async (req, res) => {
         available,
         qualification,
         amount,
-        favorite
+        favorite,
       });
       return res.status(200).json({ message: "Successfully created" });
     }
   } catch (error) {
-    res.status(400).json({ msg: error.message });
+    console.log(error.message);
   }
 };

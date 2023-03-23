@@ -481,24 +481,27 @@ const payTemplate = (data) => {
                         <td class="content-cell">
                           <div class="f-fallback">
                             <h1>Hey ${
-                              data.roll
+                              data.name
                             }! Thank you for your purchase</h1>
                             <h2>Here is your bill information:</h2>
     
                             <!-- Bill info -->
                             <div>
-                              <span><b>Your bill ID:</b> ${
-                                data.billId.toUpperCase()
-                              }</span><br />
+                            <p style="font-size: 14px;">${
+                              data.time
+                            }</p>
+                            <span><b>Your bill ID:</b> ${
+                              data.billId.toUpperCase()
+                            }</span>
                               <hr />
                               <span><b>Products:</b> ${
                                 data.products
                               }</span><br />
-                              <hr />
                               <span><b>Total:</b> $${
                                 data.value
                               } <b>- Discount:</b> ${data.discount}%</span
                               ><br />
+                              <hr />
                               <span><b>Final value:</b> $${
                                 (data.value - (data.value * data.discount / 100))
                               }</span>
@@ -575,17 +578,6 @@ const payTemplate = (data) => {
                               always ready to help!
                             </p>
                             <!-- Sub copy -->
-                            <table class="body-sub" role="presentation">
-                              <tr>
-                                <td>
-                                  <p class="f-fallback sub">
-                                    If you’re having trouble with the button above,
-                                    copy and paste the URL below into your web
-                                    browser.
-                                  </p>
-                                </td>
-                              </tr>
-                            </table>
                           </div>
                         </td>
                       </tr>

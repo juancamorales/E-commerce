@@ -1,5 +1,4 @@
 const { Food } = require("../../db");
-const foods = require("../../fileTemp");
 const joinsFunction = require("../../helpers/joinsFunction");
 
 module.exports = getFoods = async (req, res) => {
@@ -9,7 +8,7 @@ module.exports = getFoods = async (req, res) => {
     let rep = [];
     if (name) {
       resp = [];
-      let mape = foods.map((i) => de = {
+      /*  let mape = foods.map((i) => de = {
             id: i.id,
             available: i.available,
             type: i.type,
@@ -25,10 +24,13 @@ module.exports = getFoods = async (req, res) => {
             qualification: i.qualification,
             amount: i.amount,
           }
-      );
+      ); */
+
       const filds = mape.filter((e) => e.name !== "no se encontro");
       const users = await Food.findAll();
-      let mape2 = users?.map((i) => de = {
+      let mape2 = users?.map(
+        (i) =>
+          (de = {
             id: i.id,
             available: i.available,
             type: i.type,
@@ -43,8 +45,8 @@ module.exports = getFoods = async (req, res) => {
             discount: i.discount,
             qualification: i.qualification,
             amount: i.amount,
-            favorite: i.favorite
-          }
+            favorite: i.favorite,
+          })
       );
       const fild = mape2.filter((e) => e.name !== "no se encontro");
       if (fild.length > 0) {
@@ -69,11 +71,11 @@ module.exports = getFoods = async (req, res) => {
         rep.push(uses[i]);
       }
     }
-    if (foods.length > 0) {
+    /* if (foods.length > 0) {
       for (var i = 0; i < foods.length; i++) {
         rep.push(foods[i]);
       }
-    }
+    } */
     res.status(200).send(rep);
   } catch (error) {
     res.status(400).send(error.message);
