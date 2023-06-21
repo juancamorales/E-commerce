@@ -1,0 +1,10 @@
+#searchS{
+    border: 1px solid rgba(0, 128, 0, 0.565);
+    border-radius: 5px;
+    margin-top: 8px;
+    padding-left: 10px;
+    
+}
+#searchS::placeholder {
+    color: rgba(0, 128, 0, 0.358);
+  }

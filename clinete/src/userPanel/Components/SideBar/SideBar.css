@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .dashboard{
+    display: flex;
+    top: 0;
+  }
+  main{
+    width: 95%;
+    padding: 20px;
+  }
+  .user-sidebar{
+    background: #2a9461;
+    height: 100vh;
+    width: 65px;
+    transition: width 1s;
+    overflow: hidden;
+    z-index: 99;
+    box-shadow: inset -8px 0px 16px -6px rgba(240, 239, 239, 0.2);
+    margin-top: 50px;
+  }
+  .user-sidebar:hover{
+    width: 300px ;
+  }
+  .link_text{
+    left: 80px;
+    top: 20px;
+    transition: color 1s;
+    color: rgba(247, 250, 248, 0);
+  }
+  .user-sidebar:hover .link_text{
+    margin-left: 50px;
+    color: rgb(255, 255, 255,1)
+  }
+  .dash-link{
+    display: flex;
+    height: 10%;
+    line-height: 100px;
+    position: relative;
+    padding: 20px;
+    transition: border 0.5s, background 0.5s;
+  }
+  .dash-link:hover{
+    background: rgba(211, 208, 208, 0.5);
+    cursor: pointer;
+  }
+  .active {
+    background: rgba(146, 155, 152, 0.685);
+    color: rgb(233, 228, 228);
+  }
+  .icon{
+    color: white;
+    font-size: 25px;
+  }
+
+  

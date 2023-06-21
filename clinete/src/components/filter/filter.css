@@ -1,0 +1,104 @@
+.contFilter {
+    position: absolute;
+    border-radius: 5PX;
+    top: 130px;
+    left: 77%;
+    width: 20%;
+    border: 1px solid #acacaccc;
+}
+#GroupFilter{
+    margin-top: 10px;
+}
+
+.filteTittle {
+    border-radius: 5px;
+    background-color: rgba(0, 128, 0, 0.199);
+    color: rgb(1, 104, 1);
+    font-weight: bold;
+    font-size: 130%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#filtercontenido {
+    margin-left: 0.9375em;
+    margin-right: 0.9375em;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#filterimg {
+    width: 4.375em;
+    height: 3.75em;
+}
+
+.filtername {
+    color: gray;
+}
+
+#filterimg2 {
+    height: 1.875em;
+}
+
+
+.filteSubTitletxt {
+    border: none;
+    width: 100%;
+    color: green;
+    font-weight: bold;
+}
+
+.filteSubTitletxt:active,
+.filteSubTitletxt:focus {
+    outline: none;
+}
+
+.filterGrops {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+}
+
+.filterGrops2 {
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+}
+
+.imgtaFalse,
+.imgtTrue {
+    width: 90%;
+    border: 1px solid rgba(0, 128, 0, 0.384);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.imgtaFalse {
+    filter: grayscale(1);
+    opacity: 0.6;
+}
+
+#gr {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: none;
+}
+
+@media (max-width: 1536px) {
+    .filteTittle {
+        font-size: 0.80em;
+    }
+
+    .filteSubTitle {
+        font-size: 0.80em;
+    }
+
+    .filterGrops {
+        font-size: 0.80em;
+    }
+
+    .filterGrops2 {
+        font-size: 0.80em;
+    }
+}

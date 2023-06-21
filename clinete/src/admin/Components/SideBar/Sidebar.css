@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.dashboard {
+  display: flex;
+  top: 0;
+}
+main {
+  width: 96%;
+  height: 100vh auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.074);
+}
+.sidebar {
+  background: #2a9461;
+  height: 100vw;
+  width: 50px;
+  transition: width .3s;
+  overflow: hidden;
+  z-index: 99;
+  box-shadow: inset -8px 0px 16px -6px rgba(245, 245, 245, 0.2);
+}
+.sidebar:hover {
+  width: 250px;
+}
+.link_text {
+  left: 80px;
+  top: 20px;
+  margin-left: 60px;
+  font-size: small;
+  transition: color 0.3s;
+  color: rgba(247, 250, 248, 0);
+}
+.sidebar:hover .link_text {
+  margin-left: 50px;
+  font-size: medium;
+  color: rgb(255, 255, 255, 1);
+}
+.dashboard-link {
+  display: flex;
+  height: 10%;
+  line-height: 50px;
+  position: relative;
+  padding: 15px;
+  transition: border 0.5s, background 0.5s;
+}
+.dashboard-link:hover {
+  background: rgba(211, 208, 208, 0.5);
+  cursor: pointer;
+}
+.active {
+  background: rgba(146, 155, 152, 0.685);
+  color: rgb(233, 228, 228);
+}
+.icon-dash {
+  color: white;
+  font-size: 20px;
+}

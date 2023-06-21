@@ -1,0 +1,29 @@
+.text1 {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 120%;
+}
+
+.container1 {
+    background-color: floralwhite;
+    text-align: center;
+}
+#fileE{
+    margin: 10px;
+    display: inline-flex;
+}
+#imgsend{
+    width: 90%;
+    text-align: right;
+}
+.theT{
+    font-size: 300%;
+    color: green;
+    font-weight: bold;
+}
+.theE{
+    margin: 10px;
+}
+.tSub{
+    font-size: 200%;
+    color: green;
+}

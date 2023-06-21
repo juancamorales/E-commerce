@@ -1,0 +1,34 @@
+.container-Profile {
+    margin-top: 100px;
+}
+
+.container-form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 5px;
+    place-items: center;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#information{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.information-Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+.information-btn{
+    margin-right: 25%;
+    margin-left: 25%;
+}

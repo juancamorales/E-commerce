@@ -1,0 +1,42 @@
+#orders-Number {
+	color: black;
+	margin: 50px;
+    font-weight: bold;
+}
+
+.container-orders {
+	margin-top: 100px;
+}
+
+.products-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 0fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	margin-bottom: 5px;
+	place-items: center;
+}
+
+#products-image {
+	width: 100px;
+}
+
+.products-name {
+	font-size: 14px;
+	margin-bottom: 1px;
+	color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	place-items: center;
+}
+
+#orders-Total{
+    color: black;
+    margin-right: 10%;
+    font-weight: bold;
+}
+
+.container-Total{
+    display: flex;
+    justify-content: end;
+}

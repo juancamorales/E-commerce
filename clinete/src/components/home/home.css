@@ -1,0 +1,44 @@
+.ordenado {
+  position: absolute;
+  border-radius: 5PX;
+  top: 170px;
+  left: 78%;
+  width: 20%;
+  display: grid;
+  grid-template-columns: 40% 5% 40%;
+}
+
+.DeaZ2 {
+  color: green;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-style: none;
+}
+
+#inorder2 {
+  cursor: pointer;
+  border: 1px solid rgba(0, 128, 0, 0.565);
+  border-radius: 5px;
+  margin-top: 4px;
+  padding-left: 5px;
+}
+
+
+.orderTittle {
+  color: rgb(1, 104, 1);
+  font-weight: bold;
+  font-size: 130%;
+  margin-top: 10px;
+}
+
+#ordenateTxt {
+  font-size: 10%;
+}
+
+@media (max-width: 1200px) {
+  .ordenado{
+    font-size: 14px;
+  }
+}

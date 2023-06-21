@@ -1,0 +1,63 @@
+.loginContainer {
+  text-align: center;
+  background-color: #2523231f;
+  margin: auto;
+  padding: 20px;
+  width: 500px;
+  height: auto;
+  border: 1px solid rgba(29, 28, 28, 0.186);
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+#loginButtonGoToHomepage {
+  margin: auto;
+  border-radius: 50px;
+  background-color: #ffbd4ad8;
+  z-index: 1;
+  width: 300px;
+  border: 3px solid #422b1eb4;
+  box-shadow: black 0px 5px 15px;
+  color: #070707cc;
+  font-size: small;
+  font-weight: lighter;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+}
+
+#int p {
+  text-align: justify;
+}
+
+.background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.txtLogin {
+  height: 20px;
+}
+
+.aut {
+  display: grid;
+  grid-template-columns: 15% 40% 35% 10%;
+}
+
+.mycheck {
+  height: 80%;
+}
+
+.register {
+  font-size: 12px;
+  text-decoration: underline;
+
+}
+
+.local {
+  font-size: 14px;
+  text-decoration: underline;
+  display: block;
+}
